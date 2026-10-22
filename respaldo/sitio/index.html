@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>OCSO Facturación · Portal de práctica</title>
+  <meta name="description" content="Portal de facturación de práctica de un curso. No es un portal real y las facturas no tienen validez fiscal.">
+  <meta name="theme-color" content="#13213C">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icono-192.png">
+  <link rel="apple-touch-icon" href="icono-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="OCSO Factura">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="aviso" role="note">Portal de práctica de un curso. No es un portal real ni de ninguna cadena. Las facturas no tienen validez fiscal.</div>
+
+  <header class="barra">
+    <a href="#/" class="marca" aria-label="Inicio">
+      <span class="anillo" aria-hidden="true"></span>
+      <span class="palabra">OCSO</span>
+      <span class="sub">Facturación</span>
+    </a>
+    <nav class="menu">
+      <a href="#/perfiles">Mis datos</a>
+      <a href="#/facturas">Mis facturas</a>
+    </nav>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="pie">
+    <p>OCSO es una tienda inventada para aprender a construir con Claude. Tus datos fiscales se guardan solo en este celular.</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
