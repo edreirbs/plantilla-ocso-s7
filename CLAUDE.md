@@ -24,6 +24,7 @@ Un portal de facturación para celular, como el de cualquier tienda, que funcion
 - Para hablar con Supabase usa `fetch` a `https://<proyecto>.supabase.co/rest/v1/rpc/<función>` con el encabezado `apikey`. Con una llave `sb_publishable_...` no mandes `Authorization`. La URL y la llave viven en `sitio/config.js`.
 - **Seguridad:** la página solo usa la llave *publishable*. Nunca pongas en el sitio la llave secreta (`sb_secret_...`) ni la `service_role`. Las tablas no se leen desde la página: todo pasa por las funciones públicas.
 - Diseño: primero celular (390 px), botones grandes, letra de 17 px o más. Colores propios de OCSO: tinta `#13213C`, menta `#19C3A7`, arena `#F6F4EF`. **No** uses rojo y amarillo ni nada que recuerde a una cadena real.
+- Textos de los botones y del menú, tal cual: "Facturar un ticket", "Mis datos", "Mis facturas", "Tomar foto", "De la galería", "Escribir datos", "Buscar ticket", "Facturar", "Descargar PDF", "Descargar XML". La pantalla de perfiles se titula "Mis datos fiscales".
 - Siempre visible, arriba: "Portal de práctica de un curso. No es un portal real ni de ninguna cadena. Las facturas no tienen validez fiscal." El PDF lleva la marca de agua "SIN VALIDEZ FISCAL · PRÁCTICA".
 - Textos en español de México, cálidos y cortos. Sin guiones largos.
 - Las reglas del CFDI (RFC, régimen, uso, XML, PDF) están en la Skill `reglas-cfdi`. Úsala.
